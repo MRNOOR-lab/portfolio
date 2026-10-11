@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(254,215, 173));
+    scroll-behavior: smooth;
+    scroll-padding-top: 11rem;
+}
+
+/* mobile_nav_style */
+
+.header .mobile_nav_bar{
+    display: none;
+}
+.header .nav_icon_btn{
+    display: none;
+}
+/*header section style start*/
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.8rem 4rem;
+    z-index: 200;
+    position: fixed;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(254,215, 173));
+}
+
+.header .logo{
+    font-size: 2rem;
+    color: rgb(55, 50, 23);
+    font-weight: bold;
+    text-shadow: .3rem .3rem .8rem rgba(0, 0, 0, 0.1);
+
+}
+
+.header .nav_icon_btn{
+    font-size: 2.3rem;
+    color: rgb(48, 50, 51);
+    display: none;
+}
+
+.header .nav a{
+    color: rgb(76, 84, 93);
+    margin-right: 2.8rem;
+    font-size: 1.1rem;
+    transition: .3s;
+    text-shadow: .1rem .1rem .6rem rgba(0, 0, 0, 0.1);
+}
+
+.header .nav a:hover{
+    color:rgb(78, 40, 25);
+    
+}
+
+.header .nav .btn{
+    padding: .5rem 1.9rem;
+    border: 3px solid rgb(78, 40, 25);
+    background:rgb(78, 40, 25);
+    color: white;
+    border-radius: 2rem;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.header .nav .btn:hover{
+    box-shadow: .1rem .1rem .8rem rgba(0, 0, 0, 0.1);
+    background-color:transparent;
+    color:rgb(78, 40, 25);
+}
+
+/*header section style end*/
+
+
+
+/*Home section style start*/
+
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50rem;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+    margin-top: 9rem;
+    
+}
+
+.Home .content{
+    margin-left: 2rem;
+    padding-bottom: 5rem;
+    flex-basis: 36rem;
+}
+
+.Home .content h1{
+    color: rgb(22, 22, 47);
+    font-size: 2.7rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.Home .content h4{
+    color: rgb(22, 22, 47);
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.Home .content h1 span{
+    color:rgb(67, 40, 16) ;
+    text-shadow: .2rem .2rem .7rem rgba(0, 0, 0, 0.223);
+}
+
+.Home .content h4 span{
+    color:rgb(67, 40, 16) ;
+    text-shadow: .2rem .2rem .7rem rgba(0, 0, 0, 0.223);
+}
+
+.Home .content .para{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 1.2rem 0;
+    color: rgb(51, 55, 55);
+}
+
+.Home .content .btn{
+    padding: .5rem 1.9rem;
+    border: 3px solid rgb(78, 40, 25);
+    background:rgb(78, 40, 25);
+    color: white;
+    border-radius: .3rem;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.Home .content .btn:hover{
+    box-shadow: .1rem .1rem .8rem rgba(0, 0, 0, 0.1);
+    background-color:transparent;
+    color:rgb(78, 40, 25);
+}
+
+
+.Home .content .icon_div{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.Home .content .icon_div div{
+    padding: .7rem;
+    border: 2px solid rgb(47, 23, 23);
+    border-radius: 50%;
+    text-align: center;
+    color:rgb(47, 23, 23);
+    font-size: 1.2rem;
+    box-shadow: .1rem .1rem .8rem rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+.Home .content .icon_div div:hover{
+    background-color:rgb(47, 23, 23);
+    color: white;
+}
+.Home .img_continer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30rem;
+}
+
+.Home .img_continer img{
+    width: 20rem;
+    border-radius: 50%;
+    border: 4px solid rgb(59, 21, 21);
+    box-shadow: 0rem 0rem .8rem .5rem rgba(0, 0, 0, 0.200);
+
+}
+
+
+/*About section start */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+
+
+.about .content,
+.img_continer{
+    flex-basis: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.about .content h1{
+    color: rgb(22, 22, 47);
+    font-size: 2.7rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.about .content h4{
+    color: rgb(22, 22, 47);
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+.about .content h1 span{
+    color:rgb(67, 40, 16) ;
+    text-shadow: .2rem .2rem .7rem rgba(0, 0, 0, 0.223);
+}
+
+.about .content h4 span{
+    color:rgb(67, 40, 16) ;
+    text-shadow: .2rem .2rem .7rem rgba(0, 0, 0, 0.223);
+}
+
+.about .content p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(51, 55, 55);
+    text-align: center;
+}
+
+.about .content .btn{
+    padding: .5rem 1.9rem;
+    border: 3px solid rgb(78, 40, 25);
+    background:rgb(78, 40, 25);
+    color: white;
+    border-radius: .3rem;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.about .content .btn:hover{
+    box-shadow: .1rem .1rem .8rem rgba(0, 0, 0, 0.1);
+    background-color:transparent;
+    color:rgb(78, 40, 25);
+}
+
+.about .img_continer img{
+    width: 20rem;
+    border-radius: 50%;
+    border: 4px solid rgb(59, 21, 21);
+    box-shadow: 0rem 0rem .8rem .5rem rgba(0, 0, 0, 0.200);
+
+}
+
+
+
+/*Contect section style*/
+
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact h1{
+    color: rgb(47, 14, 14);
+    text-shadow: .2rem .2rem .7rem rgba(0, 0, 0, 0.223);
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+
+.contact .form_continer{
+    width: 100%;
+    height: 40rem;
+    padding: 0 15rem;
+}
+
+.contact .form_continer .input_box{
+    border: 2px solid rgba(52, 23, 23, 0.255);
+    box-shadow: .3rem .3rem .8rem rgba(0, 0, 0, 0.200);
+    padding: 1rem 2rem;
+    margin: 1.6rem 0;
+    border-radius: .4rem;
+}
+
+.contact .form_continer .input_box input{
+    color: rgb(75, 78, 78);
+    font-size: 1.1rem;
+    width: 100%;
+    background: none;
+}
+
+.contact .form_continer .smg{
+    height: 13rem;
+}
+
+
+
+
+/*skills section start */
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills .box_continer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+.skills h3{
+    color: rgb(58, 11, 11);
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    text-shadow: .1rem .1rem .9rem rgba(55, 24, 24, 0.337);
+}
+
+.skills h1{
+    color: rgb(58, 11, 11);
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    text-shadow: .1rem .1rem .9rem rgba(55, 24, 24, 0.337);
+    margin: 1rem 0;
+}
+
+.skills .para{
+    color: rgb(70, 67, 67);
+    font-size: 1.3rem;
+    width: 50rem;
+    line-height: 2rem;
+}
+
+.skills .box_continer .box{
+    background-color: white;
+    height: 12em;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0 0 .8rem .2rem rgba(65, 34, 34, 0.433);
+}
+.skills .box_continer .box h2{
+    margin: 1rem 0;
+}
+
+.skills .box_continer .box p{
+    text-align: center;
+    color: rgb(82, 89, 89);
+}
+
+.skills .box_continer .box img{
+    width: 3.4rem;
+}
+
+
+/* Service section start */
+
+.service h1{
+    text-align: center;
+    color: rgb(52, 15, 15);
+    text-shadow: .3rem .3rem .5rem rgba(47, 19, 19, 0.453);
+    font-size: 2.1rem;
+}
+.service .box_continer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.service .box_continer .box{
+    background-color: white;
+    height: 15rem;
+    width: 25rem;
+    width: rem;
+    border-radius: .6rem;
+    text-align: center;
+    box-shadow: .3rem .3rem .8rem rgba(0, 0, 0, 0.200);
+    padding: 1.5rem;
+
+}
+
+.service .box_continer .box h4{
+    color: rgb(47, 13, 13);
+    font-size: 1.5rem;
+
+}
+
+.service .box_continer .box p{
+    color: rgb(66, 62, 62);
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.service .box_continer .box .btn{
+    padding: .5rem 1.9rem;
+    border: 3px solid rgb(78, 40, 25);
+    background:rgb(78, 40, 25);
+    color: white;
+    border-radius: .3rem;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.service .box_continer .box .btn:hover{
+    box-shadow: .1rem .1rem .8rem rgba(0, 0, 0, 0.1);
+    background-color:transparent;
+    color:rgb(78, 40, 25);
+}
+
+
+
+
+
+
+
+/* midea query selectore  start*/
+
+@media (max-width: 1105px){
+
+    html{
+        font-size: 80%;
+    }
+    .header{
+        padding: .7rem;
+    }  
+}
+
+
+@media (max-width: 666px){
+
+    .header .nav{
+        display: none;
+    }
+    .header .mobile_nav_bar{
+        display: block;
+        position: absolute;
+        top: 6rem;
+        right: -40rem;
+        background-color: rgb(81, 32, 32);
+        height: 25rem;
+        width: 17rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2.7rem;
+        box-shadow: .3rem .3rem .6rem rgba(60, 27, 27, 0.495);
+        border-radius: .5rem;
+        
+        
+    }
+    .header .mobile_nav_bar.active{
+        right: 5rem;
+        transition: .2s linear;
+    }
+
+
+    .header .mobile_nav_bar .btn{
+        padding: .6rem 2.1rem;
+        border-radius: .4rem;
+        font-size: 1.2rem;
+        color: rgb(63, 26, 26);
+        border: 1px solid white;
+        transition: .3s;
+    }
+    .header .mobile_nav_bar .btn:hover{
+        background-color: transparent;
+        color: white;
+    }
+
+    .header .nav_icon_btn{
+        display: block;
+    }
+    .header .mobile_nav_bar a{
+        color: white; 
+        font-size: 1.3rem;
+    }
+    .contact .form_continer{
+        padding: 2rem;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+    .Home{
+        gap: 0rem;
+    }
+}
+
+
+/* midea query selectore end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
